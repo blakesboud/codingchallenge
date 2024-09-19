@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- defer to ensure script runs after DOM is fully loaded -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <div class="logo">Mednet</div>
+        <ul class="links">
+          <li>Resources</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- menu to pick what kind of number, pound, kilogram, miles -->
+    <div class="conversion-container">
+      <div class="input-container">
+        <select class="unit-select">
+          <option value="pounds">Pounds</option>
+          <option value="kilograms">Kilograms</option>
+          <option value="feet">Feet</option>
+          <option value="inches">Inches</option>
+          <option value="miles">Miles</option>
+          <option value="kilometers">Kilometers</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="meters">Meters</option>
+        </select>
+
+        <input type="number" class="input" placeholder="Enter a number" />
+      </div>
+
+      <select class="operator-select">
+        <option value="=">=</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <div class="output-container">
+        <select class="output-conversion">
+          <option value="pounds">Pounds</option>
+          <option value="kilograms">Kilograms</option>
+          <option value="feet">Feet</option>
+          <option value="inches">Inches</option>
+          <option value="miles">Miles</option>
+          <option value="kilometers">Kilometers</option>
+          <option value="centimeters">Centimeters</option>
+          <option value="meters">Meters</option>
+        </select>
+        <input type="number" class="output" placeholder="Result" />
+        <span class="result-display"></span>
+      </div>
+    </div>
+
+    <button class="convert-button">Convert</button>
+    <!-- <div id="result"></div> -->
+  </body>
+</html>

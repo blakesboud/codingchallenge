@@ -1,0 +1,97 @@
+body {
+  background: #7879a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 8px black;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+ul {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.conversion-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* Adjust this value if needed to avoid overlap with the fixed header */
+}
+
+.input-container,
+.output-container {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.operator-select {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.result-display {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.convert-button {
+  font-family: 'Futura PT', sans-serif;
+  background-color: white; /* White background */
+  color: #007BFF; /* Blue text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
+}
+
+.convert-button:hover {
+  background-color: #007BFF; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
