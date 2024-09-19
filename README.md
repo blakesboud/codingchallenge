@@ -21,6 +21,8 @@ This project is a simple web-based tool for converting units of measurement.
 - node server.js
 - server will start on http://localhost:3001
 
+- To run unit tests, npm install if not already, then npx mocha test.mjs
+
 ### Note
 - Set up server.js with Express and the conversion logic
 

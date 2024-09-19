@@ -1,6 +1,6 @@
 // test.mjs
 import { expect } from 'chai';
-import server from './server.js'; // Import the entire module as default
+import server from './server.js'; 
 
 const { convertToCommonUnit, convertFromCommonUnit } = server;
 
